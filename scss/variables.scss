@@ -1,0 +1,17 @@
+$font-size-small: 12px;
+$font-size-normal: 16px;
+$font-size-big: 20px;
+
+p{
+    @mixin small {
+        font-size: $font-size-small;
+    }
+
+    @mixin normal {
+        font-size: $font-size-normal;
+    }
+
+    @mixin big {
+        font-size: $font-size-big;
+    }
+}
