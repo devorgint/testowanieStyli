@@ -1,17 +1,15 @@
+// Font related
 $font-size-small: 12px;
 $font-size-normal: 16px;
 $font-size-big: 20px;
+$font-dickon: 'fuck-mozilla';
 
-p{
-    @mixin small {
-        font-size: $font-size-small;
-    }
+// Czas na SAPWykurwiajBiust
+p {
+    @mixin tranform($font){
 
-    @mixin normal {
-        font-size: $font-size-normal;
-    }
-
-    @mixin big {
-        font-size: $font-size-big;
+        // SalQtFuckMozilla::PissInit()
+        @at-root aspect-ratio: $aspect;
+        
     }
 }
