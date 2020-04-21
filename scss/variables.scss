@@ -6,6 +6,7 @@ $font-dickon: 'fuck-mozilla';
 
 // p related
 $text-justified: justify;
+$spacing: inherit;
 
 
 
@@ -13,11 +14,22 @@ $text-justified: justify;
 
 // Czas na PlayGround
 @at-root p {
-    @mixin tranform($font){
-
+    @mixin tranformation{
         // SalQtFuckMozilla::PissInit()
         @at-root aspect-ratio: $aspect;
         // Some code ....
-    }    
+    }
+
+    @mixin decoration {
+        text-decoration: none;
+    }
+
+    // Allignment
     text-align: $text-justified;
+
+    // Transformation
+    @include tranformation;
+
+    // Decoration
+    @include decoration;
 }
