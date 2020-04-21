@@ -4,12 +4,20 @@ $font-size-normal: 16px;
 $font-size-big: 20px;
 $font-dickon: 'fuck-mozilla';
 
-// Czas na SAPWykurwiajBiust
-p {
+// p related
+$text-justified: justify;
+
+
+
+
+
+// Czas na PlayGround
+@at-root p {
     @mixin tranform($font){
 
         // SalQtFuckMozilla::PissInit()
         @at-root aspect-ratio: $aspect;
         // Some code ....
-    }
+    }    
+    text-align: $text-justified;
 }
