@@ -7,6 +7,8 @@ $font-dickon: 'fuck-mozilla';
 // p related
 $text-justified: justify;
 $spacing: inherit;
+$paragragraph-background: transparent;
+$letters: to-lower-case($string: $(this.document));
 
 
 
@@ -32,4 +34,10 @@ $spacing: inherit;
 
     // Decoration
     @include decoration;
+
+    // Transformation
+    @include letters;
+
+    // Background color
+    @include paragraph-background
 }
