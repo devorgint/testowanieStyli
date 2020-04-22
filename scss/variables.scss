@@ -13,13 +13,11 @@ $letters: to-lower-case($string: $(this.document));
 
 
 
-
 // Czas na PlayGround
 @at-root p {
     @mixin tranformation{
         // SalQtFuckMozilla::PissInit()
-        @at-root aspect-ratio: $aspect;
-        // Some code ....
+        text-transform: $letters;
     }
 
     @mixin decoration {
@@ -39,5 +37,8 @@ $letters: to-lower-case($string: $(this.document));
     @include letters;
 
     // Background color
-    @include paragraph-background
+    @include paragraph-background;
+
+    // Spacing
+    @include spacing;
 }
