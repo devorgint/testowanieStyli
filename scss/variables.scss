@@ -10,6 +10,11 @@ $spacing: inherit;
 $paragragraph-background: transparent;
 $letters: to-lower-case($string: $(this.document));
 
+// text-div related
+$text-div-background-color: white;
+$text-div-spacing: inherit !important;
+$text-div-font-size: $font-size-normal;
+$text-div-text-decoration: none;
 
 
 
@@ -41,4 +46,8 @@ $letters: to-lower-case($string: $(this.document));
 
     // Spacing
     @include spacing;
+}
+
+@at-root div {
+    
 }
