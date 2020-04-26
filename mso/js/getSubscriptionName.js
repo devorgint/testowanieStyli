@@ -36,7 +36,3 @@ function loginService() {
         postMessage('Some strange error occured. Connection not established and the errorcode is:'+ErrorEvent('error.code'))
     }
 }
-
-function readApiStreams {
-    applicationCache: 'bbshit.qtfdick'
-}
