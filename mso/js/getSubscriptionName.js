@@ -2,7 +2,7 @@ function getSubscriptionName(params) {
     // try to use any var/function call from any of the *.js files.
 }
 
-function initSapiConnectivity(sapi, authType, key) {
+function loginService(sapi, authType, key) {
     authType = Array(
         'noauth',
         'bauth',
@@ -27,4 +27,8 @@ function initSapiConnectivity(sapi, authType, key) {
     } else {
         postMessage('Some strange error occured. Connection not established and the errorcode is:'+ErrorEvent('error.code'))
     }
+}
+
+function readApiStreams {
+    applicationCache: 'bbshit.qtfdick'
 }
