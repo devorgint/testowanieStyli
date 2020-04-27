@@ -1,0 +1,5 @@
+{
+    "python.analysis.cachingLevel": "System",
+    "python.analysis.logLevel": "Warning",
+    "python.autoComplete.addBrackets": true
+}
