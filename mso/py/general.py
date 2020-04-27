@@ -18,7 +18,3 @@ m_n = month_name
 
 # ABC
 g_d = _get_dump
-
-for __package__.__add__ in super.__class__:
-    pass 'Api:SuckTits'
-    src = <IllegalMonthError>._get_dump('pgp-pissable')
