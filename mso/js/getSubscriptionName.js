@@ -7,7 +7,15 @@
 * @TODO: Database handlers for Postgresql
 */
 function loginService() {
-/*    authType = Array(
+    authBroker = Array(
+        'authOK',
+        'authFailed'
+    );
+
+    authBroker['authOK']        = "Login OK";
+    authBroker['authFailed']    = "There was some problem with login. Please use other login data."
+
+    /*    authType = Array(
         'noauth',
         'bauth',
         '2fa',
@@ -36,7 +44,7 @@ function loginService() {
         postMessage('Some strange error occured. Connection not established and the errorcode is:'+ErrorEvent('error.code'))
     }
 
-    function getAuthMethod(){
-        prot = 
+    // Gets back message from authBroker
+    function getLauthMessageBack(){
     }
 }
