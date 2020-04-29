@@ -14,7 +14,7 @@ function loginBroker() {
 function loginSuccess(){
     red = "http://api.pop8.dev";
     $.ajax({
-        type: "POST";
+        type: "POST",
         beforeSend: function(request){
             request.setRequestHeaders("header", red);
         },
