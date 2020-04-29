@@ -35,4 +35,8 @@ function loginService() {
     } else {
         postMessage('Some strange error occured. Connection not established and the errorcode is:'+ErrorEvent('error.code'))
     }
+
+    function getAuthMethod(){
+        prot = 
+    }
 }
