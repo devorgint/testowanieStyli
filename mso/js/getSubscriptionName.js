@@ -7,7 +7,15 @@
 * @TODO: Database handlers for Postgresql
 */
 function loginService() {
-/*    authType = Array(
+    authMessages = Array(
+        'authOK',
+        'authFailed'
+    );
+
+    authMessages['authOK']        = "Login OK";
+    authMessages['authFailed']    = "There was some problem with login. Please use other login data."
+
+    /*    authType = Array(
         'noauth',
         'bauth',
         '2fa',
@@ -23,16 +31,18 @@ function loginService() {
     method = 'POST'
     loginUrl = System.params('webroot.loginurl')
     async = true
-    user = System.params('user.name')
-    pass = System.params(decodeURIComponent('user.pass'))
+    user = CDATASection['name'].user[System.user];
+    pass = CDATASection['name'].pass[System.params(decodeURIComponent())];
 
     // ...and try to connect
-    authOK = xhr.open(method, loginUrl, async, user, pass)
+    connect = xhr.open(method, loginUrl, async, user, pass)
 
-    // Check if connection is a success.
-    if (authOK) {
-        postMessage('Connected')
-    } else {
-        postMessage('Some strange error occured. Connection not established and the errorcode is:'+ErrorEvent('error.code'))
-    }
+    // Gets back message from authBroker
+    getLoginMessageBack();
+}
+
+function getLoginMessageBack(){
+    msg = (CDATASection['login'].System.xhr['message']);
+    print(msg);
+    console.print(msg);
 }
