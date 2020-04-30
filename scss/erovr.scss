@@ -1,0 +1,16 @@
+body{
+    @media screen {
+        height: auto;
+    }
+
+    @at-root body {
+        color-interpolation-filters: linearRGB;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        transform: (rotateX(90),
+                   rotateY(90),
+                   rotateZ(12));
+        @if to-upper-case($string: "ChujKde") {
+            // zajeb qt
+        }
+    }
+}
